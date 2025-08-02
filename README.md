@@ -11,13 +11,13 @@ Equation of the Line/Hyperplane: The model seeks to determine the optimal coeffi
 
 Loss Function (Mean Squared Error - MSE): To determine the "best-fitting" line, the model uses a loss function to quantify the difference between its predicted values and the actual observed values. Mean Squared Error (MSE) is the most common loss function for linear regression, which calculates the average of the squared differences between predictions and actuals. The goal during training is to minimize this loss.
 
-Optimization (Gradient Descent or Ordinary Least Squares):
+## Optimization (Gradient Descent or Ordinary Least Squares):
 
 Ordinary Least Squares (OLS): For simpler cases, a direct mathematical solution (Normal Equation) can be used to calculate the optimal coefficients that minimize MSE.
 
 Gradient Descent: For more complex datasets or when direct solutions are computationally expensive, an iterative optimization algorithm like Gradient Descent is used. It works by incrementally adjusting the model's coefficients in the direction that reduces the loss function, taking small "steps" until it converges to the minimum error.
 
-Training Process Steps:
+## Training Process Steps:
 Data Collection & Preparation:
 
 Gather relevant data with input features and the target variable.
@@ -26,15 +26,15 @@ Clean the data (handle missing values, outliers).
 
 Perform Feature Engineering (if necessary) to create new features or transform existing ones to better capture linear relationships.
 
-Data Splitting:
+## Data Splitting:
 
 Divide the dataset into training and testing sets. The model learns from the training data and its performance is evaluated on the unseen testing data to ensure generalization.
 
-Model Initialization:
+## Model Initialization:
 
 Initialize the model's coefficients (weights) and bias, often with small random values.
 
-Iterative Optimization (for Gradient Descent):
+## Iterative Optimization (for Gradient Descent):
 
 Forward Pass: For each data point in the training set, the model makes a prediction using its current coefficients.
 
@@ -46,7 +46,7 @@ Update Coefficients: The coefficients are adjusted in the opposite direction of 
 
 Repeat: These steps are repeated over many iterations (epochs) or until the loss converges to a minimum.
 
-Model Evaluation:
+## Model Evaluation:
 
 After training, the model's performance is assessed on the unseen test set using metrics like:
 
@@ -56,7 +56,7 @@ Root Mean Squared Error (RMSE)
 
 R-squared (Coefficient of Determination): Indicates how well the model explains the variability of the dependent variable.
 
-Libraries Commonly Used:
+## Libraries Commonly Used:
 numpy: For numerical operations and array manipulation.
 
 pandas: For data loading, manipulation, and analysis.
